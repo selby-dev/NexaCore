@@ -8,7 +8,7 @@ section {padding:40px; max-width:1000px; margin:auto;}
 button {background:#38bdf8; border:none; padding:12px; border-radius:8px; cursor:pointer; width:100%; font-weight:bold;}
 input, textarea {width:100%; padding:10px; margin:10px 0; border-radius:8px; border:none;}
 footer {text-align:center; padding:20px; background:#020617;}
-.video-section {background:#1e293b; padding:20px; border-radius:12px;}
+.video-section {background:#1e293b; padding:20px; border-radius:12px; display: flex;gap: 15px;}
 
 .image-row {
   display: flex;
