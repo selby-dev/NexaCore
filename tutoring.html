@@ -11,6 +11,18 @@ body {
   font-family: Arial, sans-serif;
   background: #0f0f0f;
   color: white;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: url("Portfolio/tien.jpg") center/cover no-repeat;
+  
+  opacity: 0.2; /* 🔥 THIS controls fade (40%) */
+
+  z-index: -1;
 }
 footer {text-align:center; padding:20px; background:#020617;}
 button {background:#38bdf8; border:none; padding:12px; border-radius:8px; cursor:pointer; width:100%; font-weight:bold;}
@@ -175,5 +187,24 @@ ul li {
 <footer>
 <p>© 2026 NexaCore Solutions</p>
 </footer>
+<script>
+  const images = [
+    "Portfolio/tien.jpg",
+    "Portfolio/aron.jpg"
+  ];
+
+  let index = 0;
+
+  function changeBackground() {
+    document.body.style.setProperty(
+      "--bg-image",
+      `url(${images[index]})`
+    );
+
+    index = (index + 1) % images.length;
+  }
+
+  setInterval(changeBackground, 5000); // every 5 seconds
+</script>
 </body>
 </html>
