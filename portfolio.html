@@ -79,5 +79,24 @@
     <footer>
     <p>© 2026 NexaCore Solutions</p>
     </footer>
+    <script>
+  const images = [
+    "Portfolio/glenn.jpg",
+    "Portfolio/aron.jpg"
+  ];
+
+  let index = 0;
+
+  function changeBackground() {
+    document.body.style.setProperty(
+      "--bg-image",
+      `url(${images[index]})`
+    );
+
+    index = (index + 1) % images.length;
+  }
+
+  setInterval(changeBackground, 5000); // every 5 seconds
+</script>
 </body>
 </html>
