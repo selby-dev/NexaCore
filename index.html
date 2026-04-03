@@ -146,7 +146,28 @@ alert("Fill the form below to contact me.");
 </script>
 <footer>
     <p>© 2026 NexaCore Solutions</p>
-    </footer>
+</footer>
+<script>
+  const images = [
+    "Portfolio/bg_drk2.jpg",
+    "Portfolio/bg_drk1.jpg",
+    "Portfolio/geo1.jpg",
+    "Portfolio/aron.jpg"
+  ];
+
+  let index = 0;
+
+  function changeBackground() {
+    document.body.style.setProperty(
+      "--bg-image",
+      `url(${images[index]})`
+    );
+
+    index = (index + 1) % images.length;
+  }
+
+  setInterval(changeBackground, 5000); // every 5 seconds
+</script>
 </body>
      
 </html>
