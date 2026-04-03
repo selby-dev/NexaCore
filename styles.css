@@ -1,4 +1,18 @@
-body{font-family: Arial; margin:0; background:#0f172a; color:#fff;}
+body{font-family: Arial; margin:0; background:#0f172a; color:#fff;
+  position: relative;
+  --bg-image: url("Portfolio/bg_drk2.jpg");}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: var(--bg-image) center/cover no-repeat;
+
+  opacity: 0.4;
+  z-index: -1;
+
+  transition: background-image 1.5s ease-in-out;
+}
 header {text-align:center; padding:40px; background:#020617;}
 header img {width:550px; max-width:90%;}
 h1 {color:#38bdf8; margin:10px 0;}
