@@ -138,8 +138,10 @@ function sendEmail() {
   let name = document.getElementById('name').value;
   let message = document.getElementById('message').value;
 
-  let subject = encodeURIComponent(`Customer Inquiry from ${name}`);
-  let body = encodeURIComponent(message);
+  let subject = encodeURIComponent(`Customer Inquiry - NexaCore Solutions`);
+  let body = encodeURIComponent(
+    `Name: ${name}\n\nMessage:\n${message}`
+  );
 
   window.location.href = `mailto:nexacore.solutions.sa@gmail.com?subject=${subject}&body=${body}`;
 }
