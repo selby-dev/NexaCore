@@ -14,7 +14,7 @@ This is the official website for NexaCore Solutions, a digital service provider 
 - JavaScript
 
 ## 📸 Preview
-<img src="images/screenshot.png" width="600"/>
+<img src="screenshot.png" width="600"/>
 
 ## 📬 Contact
 Email: nexacore.solutions.sa@gmail.com
