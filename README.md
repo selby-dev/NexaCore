@@ -1,4 +1,5 @@
 # NexaCore Solutions Website
+<img src="NexaCore Logo.png" width="600"/>
 
 ## 🌐 Overview
 This is the official website for NexaCore Solutions, a digital service provider offering technical support, device setup, and business services.
